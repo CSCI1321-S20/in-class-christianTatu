@@ -1,0 +1,87 @@
+<roomList>
+    <room roomNum ="0" roomName="meadow">
+        <desc>
+This is the starting meadow. Butterflys float about as golden rays of 
+sunshine cascade through the tree's leaves. You feel warm and sleepy.
+a path into the forest is to your west. A Wooden post at the entrance reads &quot;to the plains &quot;
+To your north, a castle surrounded by snow tipped mountains looms on the horizon.
+Dunes of sand lie to your East.
+A chilly wind escapes the entrace to a cave to your South.</desc>
+        <items>
+            <item name="sword">A Rotting Wooden sword, it&apos;s handle is well worn from years of novices practicing with it. It&apos;s blade is infested with moss</item>
+        </items>
+        <exits>   N  E  S  W   U   D
+            <exit>1, 4, 5, 3, -1, -1, </exit>
+        </exits>
+    </room>
+
+
+    </room roomNum="3" roomName="Plain">
+        <desc>
+A vast plain of rolling hills stopping only to meet the horizon lay infront of you. 
+Speckled cows are scattered about, munching on the waving tall grass that sways in the wind.
+There is a small cabin on one of the closer hills furthur to the West.
+The trail to the meadow winds into the forest to your East </desc>
+        <items> </items>
+        <exits>
+        N E    s   W   U   D
+            <exit>-1, -1, -1, -1, -1, -1, 
+        <exit dest="0" dir="East"></exit>
+        </exits>
+    </room>
+
+
+    <room roomNum ="1" roomName="Castle" shortDesc="The Castle is surrounded by a moat. The Drawbridge is stuck halfway up. A lever on your side of the Moat is missing a gear.
+                                                A scraggly rockface that leads to an overlook looks easily climbable. 
+                                                The path to the meadow sits behind you to the South">
+        <items> </items>
+        <exits>
+        N E    s   W   U   D
+            <exit>-1, -1, -1, -1, -1, -1, 
+        <exit dest="overlook" dir="Up" ></exit>
+        <exit dest="meadow" dir="South" ></exit>
+        </exits>
+    </room>
+
+
+
+    <room roomNum ="2" roomName="Overlook" shortDesc="A gust of wind almost knocks you off your feet as you climb onto the overlook.
+                                                    you can see the meadow to your south, and can see over the castle&apos;s ramparts. There is no 
+                                                    movement in the bailey aside from a stray cat that skimpers toward the barn.
+                                                    You can climb Down back the way you came.">
+        <items>
+        <item itemName="telescope" itemDesc="A telescope. It&apos;s eyepiece is cracked. It needs to be repaired. "></item>
+        </items>
+
+        <exits>
+        N E    s   W   U   D
+            <exit>-1, -1, -1, -1, -1, -1, 
+        <exit dest="castle" dir="Down"></exit>
+        </exits>
+    </room>
+
+
+    <room roomNum ="4" roomName="desert" shortDesc="An airid desert lies before you. you&quot;ll need a camel and water to cross it. 
+                                                The meadow is to your West.">
+        <items> </items>
+        <exits>
+        N E    s   W   U   D
+            <exit>-1, -1, -1, -1, -1, -1, 
+        <exit dest="0" dir="West"></exit>
+        </exits>
+    </room>
+
+
+    <room roomNum ="5" roomName="cave" shortDesc="The cave is damp and dark. You can only go so far before you can&apos;t see.
+                                                You&quot;ll need a torch to go furthur.
+                                                The Meadow is to the North.">
+        <items> </items>
+        <exits>
+            <exit> 0, -1, -1, -1, -1, -1, <exit>
+            <exit dest="0" dir="north"></exit>
+        </exits>
+    </room>
+
+
+</roomList>
+
