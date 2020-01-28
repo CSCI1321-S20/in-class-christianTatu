@@ -25,60 +25,63 @@ The trail to the meadow winds into the forest to your East </desc>
         <items> </items>
         <exits>
                    N   E   S   W   U   D
-            <exit>-1, -1, -1, -1, -1, -1, 
-        <exit dest="0" dir="East"></exit>
+            <exit>-1, 0, -1, -1, -1, -1,</exit>
         </exits>
     </room>
 
 
-    <room roomNum ="1" roomName="Castle" shortDesc="The Castle is surrounded by a moat. The Drawbridge is stuck halfway up. A lever on your side of the Moat is missing a gear.
-                                                A scraggly rockface that leads to an overlook looks easily climbable. 
-                                                The path to the meadow sits behind you to the South">
+    <room roomNum ="1" roomName="Castle">
+        <desc>
+The Castle is surrounded by a moat. The Drawbridge is stuck halfway up. A lever on your side of the Moat is missing a gear.
+A scraggly rockface that leads to an overlook looks easily climbable. 
+The path to the meadow sits behind you to the South" </desc>
         <items> </items>
         <exits>
-        N E    s   W   U   D
-            <exit>-1, -1, -1, -1, -1, -1, 
-        <exit dest="overlook" dir="Up" ></exit>
-        <exit dest="meadow" dir="South" ></exit>
+                   N   E   S   W   U   D
+            <exit>-1, -1, 0, -1, -2, -1,</exit>
         </exits>
     </room>
 
 
 
-    <room roomNum ="2" roomName="Overlook" shortDesc="A gust of wind almost knocks you off your feet as you climb onto the overlook.
-                                                    you can see the meadow to your south, and can see over the castle&apos;s ramparts. There is no 
-                                                    movement in the bailey aside from a stray cat that skimpers toward the barn.
-                                                    You can climb Down back the way you came.">
+    <room roomNum ="2" roomName="Overlook"> 
+        <desc>
+A gust of wind almost knocks you off your feet as you climb onto the overlook.
+you can see the meadow to your south, and can see over the castle&apos;s ramparts. There is no 
+movement in the bailey aside from a stray cat that skimpers toward the barn.
+You can climb Down back the way you came.</desc>
         <items>
-        <item itemName="telescope" itemDesc="A telescope. It&apos;s eyepiece is cracked. It needs to be repaired. "></item>
+        <item itemName="telescope">A telescope. It&apos;s eyepiece is cracked. It needs to be repaired. "</item>
         </items>
 
         <exits>
-        N E    s   W   U   D
-            <exit>-1, -1, -1, -1, -1, -1, 
+                   N   E   S   W   U   D
+            <exit>-1, -1, -1, -1, -1,  1, 
         <exit dest="castle" dir="Down"></exit>
         </exits>
     </room>
 
 
-    <room roomNum ="4" roomName="desert" shortDesc="An airid desert lies before you. you&quot;ll need a camel and water to cross it. 
-                                                The meadow is to your West.">
+    <room roomNum ="4" roomName="desert">
+        <desc>
+An airid desert lies before you. you&quot;ll need a camel and water to cross it. 
+The meadow is to your West."</desc>
         <items> </items>
         <exits>
-        N E    s   W   U   D
-            <exit>-1, -1, -1, -1, -1, -1, 
-        <exit dest="0" dir="West"></exit>
+                   N   E   S   W   U  D
+            <exit>-1, -1, -1, 0, -1, -1 </exit>
         </exits>
     </room>
 
 
-    <room roomNum ="5" roomName="cave" shortDesc="The cave is damp and dark. You can only go so far before you can&apos;t see.
-                                                You&quot;ll need a torch to go furthur.
-                                                The Meadow is to the North.">
+    <room roomNum ="5" roomName="cave"> 
+        <desc>
+"The cave is damp and dark. You can only go so far before you can&apos;t see.
+You&quot;ll need a torch to go furthur.
+The Meadow is to the North."</desc>
         <items> </items>
         <exits>
-            <exit> 0, -1, -1, -1, -1, -1, <exit>
-            <exit dest="0" dir="north"></exit>
+            <exit> 0, -1, -1, -1, -1, -1, </exit>
         </exits>
     </room>
 

@@ -1,12 +1,26 @@
 package mud
 
-class Player(val name: String, val loc: Int, var inv: List[Item]) {
+class Player(val name: String, val loc: Room, var inv: List[Item]) {
     //do I need an "exits" list or array? or will this be
     // a command that calls the array of exits in loc and prints from there?
 
     def processCommand(command: String): Unit = {
-        val input = readLine()
-        input.toString
+        command.trim.toLowerCase match {
+            case "north" | "n" | "east" | "e" | "south" | "s" | "west" | "w" | "up" | "u" | "down" | "d" => move(command)
+            
+            case "look" | "l" => println(loc.description)
+            
+            case "inventory" | "inv" => inventoryListing()
+            
+            //case "exit" | "quit" => ???
+            case "help" => help()
+
+
+
+
+
+        }
+        
     //split input on spaces 
     //read first word, branch from there 
 
@@ -50,11 +64,8 @@ class Player(val name: String, val loc: Int, var inv: List[Item]) {
 
     }
     
-    //def help
-    def help(command: String): Unit = {
-        val input = readLine()
-        input.toString.trim
-        if(input.toLowerCase == "help") {
+    //def help(command: String): Unit = {
+        def help(): Unit = {
             println(
             """
             \n move - moves your player in a direction
@@ -71,23 +82,23 @@ class Player(val name: String, val loc: Int, var inv: List[Item]) {
     }
        //Do Movement
 
-//     def move(command: String): Unit = {
-//         val input = readLine()
-//          input.split(" +",2)
-//         input(0).tolowercase match {
-//         case "north" || n => ??? dir = 0
-//         case east || e => ??? dir = 1         
-//         case south || s => ??? dir = 2
-//         case west || w => ??? dir = 3
-//         case up | u => ??? dir = 4
-//         case down | d => ??? dir = 5
+    def move(command: String): Unit = {
+        val input = readLine()
+         input.split(" +",2)
+        input(0).tolowercase match {
+        case "north" || "n" => ??? dir = 0
+        case "east" || "e" => ??? dir = 1         
+        case "south" || "s" => ??? dir = 2
+        case "west" || "w" => ??? dir = 3
+        case "up" | "u" => ??? dir = 4
+        case "down" | "d" => ??? dir = 5
       
       
-//         items = items.filter(_ != item)
-//         Some(item)
-//       case None => None
-//     }
-//   }
-//             println(
+        items = items.filter(_ != item)
+        Some(item)
+      case None => None
+    }
+  }
+            println(
     
 }
