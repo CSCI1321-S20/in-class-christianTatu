@@ -24,7 +24,7 @@ There is a small cabin on one of the closer hills furthur to the West.
 The trail to the meadow winds into the forest to your East </desc>
         <items> </items>
         <exits>
-        N E    s   W   U   D
+                   N   E   S   W   U   D
             <exit>-1, -1, -1, -1, -1, -1, 
         <exit dest="0" dir="East"></exit>
         </exits>

@@ -70,7 +70,7 @@ object Room {
 
     def itemFromNode(n:Node):Item = {
         val itemName = (n \ "@name").text 
-        val itemDesc = n.text 
+        val itemDesc = n.text
         new Item(itemName,itemDesc)
 
     }
@@ -80,8 +80,7 @@ object Room {
       val name = (n \ "@roomName").text
       val shortDesc = (n \ "desc").text
       val items = (n \ "item").map(itemFromNode).toList
-      val exits = (n \ "exit").text.split.map(_).toint
-      
+      val exits = (n \\ "exit").toArray.map(_.text.toInt)  
       new Room(num, name, shortDesc, items, exits)
     }
 
