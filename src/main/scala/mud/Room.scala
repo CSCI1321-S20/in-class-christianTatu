@@ -57,10 +57,6 @@ class Room(
 
 object Room {
   val rooms = readRooms()
-
-    //readRooms is supposed to create our master Array of rooms, each
-    // of which contain subArrays of exits, and a sub(list) of items
-    
     
     def readRooms():Array[Room] = {
         val xmlData = XML.loadFile("Map.xml")

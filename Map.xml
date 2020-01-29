@@ -37,8 +37,8 @@ A scraggly rockface that leads to an overlook looks easily climbable.
 The path to the meadow sits behind you to the South" </desc>
         <items> </items>
         <exits>
-                   N   E   S   W   U   D
-            <exit>-1, -1, 0, -1, -2, -1,</exit>
+                   N   E  S   W   U   D
+            <exit>-1, -1, 0, -1,  2, -1,</exit>
         </exits>
     </room>
 
