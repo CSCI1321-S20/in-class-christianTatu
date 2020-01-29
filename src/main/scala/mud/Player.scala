@@ -13,30 +13,28 @@ class Player(val name: String, val loc: Room, var inv: List[Item]) {
             
             case "inventory" | "inv" => inventoryListing()
             
-            case "get" => addToInventory(com(1))
+            case "get" =>  getToInventory(com(1))     getItem(com(1))
 
-            case "add" => 
+            case "drop" => dropFromInventory(com(1))  dropItem(com(1))
 
-            //case "exit" | "quit" => ???
+            //case "exit" | "quit" => playerInput = "exit"
+
             case "help" => help()
 
-
-
-
-
+            case _ => println("Command not recognized. type \"help\" to see a list of commands")
         }
     }
-        
+      
     //split input on spaces 
     //read first word, branch from there 
-        //input.split(" +",2)            item" +" splits on spaces, 2 gives you MAX 2 diff items
+        //ingetput.split(" +",2)            item" +" splits on spaces, 2 gives you MAX 2 diff items
 
-        //ORitem
+        //ORgetitem
 
-        //input.startsWith (first commanditem)
-        //input.drop       item
+        //ingetput.startsWith (first commanditem)
+        //ingetput.drop       item
 
-    def getFromInventory(itemName: Stringitem): Option[Item] = {
+    def dropFromInventory(itemName: String): Option[Item] = {
         // YES: Pull an item out of the inventory (if it exists) and return it.
         // YES: filter inventory for name of item, if empty, return error
         // NO: if there, remove it from player inv and add to room inventory
@@ -47,7 +45,7 @@ class Player(val name: String, val loc: Room, var inv: List[Item]) {
             
          if(inv.contains(itemName)) {
                 inv = inv.filter(_ != itemName)
-            Some(theItem)
+            Some(itemName)
             }
             None 
         }
@@ -56,7 +54,7 @@ class Player(val name: String, val loc: Room, var inv: List[Item]) {
         
     
 
-    def addToInventory(item: Item): Unit = {
+    def getToInventory(item: Item): Unit = {        //used to be add, i changed the name to getToInventory from dropToInventory
         items ::= inv
         //- Add the given item to inventory.
        // remove item froom Room inventory and add it to player inventory, 
@@ -76,7 +74,7 @@ class Player(val name: String, val loc: Room, var inv: List[Item]) {
     def move(command: String): Unit = {
         val input = readLine()
          input.split(" +",2)
-        input(0).tolowercase match {
+        input(0).toLowerCase match {
         case "north" || "n" => ??? dir = 0
         case "east" || "e" => ??? dir = 1         
         case "south" || "s" => ??? dir = 2
@@ -86,13 +84,13 @@ class Player(val name: String, val loc: Room, var inv: List[Item]) {
         }
     }   
 
-    def move(dir: String): Unit = {
+    //def move(dir: String): Unit = {
         //- Move the player in a particular direction if possible.
         //read input, if Room[Exits] contains a location AND destination
             //update player to that new destination
-        ???
+        //???
 
-    }
+    //}
     
     def help(command: String): Unit = {
         def help(): Unit = {
