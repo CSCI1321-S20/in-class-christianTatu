@@ -3,7 +3,7 @@
         <desc>
 This is the starting meadow. Butterflys float about as golden rays of 
 sunshine cascade through the tree's leaves. You feel warm and sleepy.
-A path into the forest is to your west. A wooden post at the entrance reads &quot;to the plains &quot;
+A path into the forest is to your west. A wooden post at the entrance reads &quot;to the plains &quot;.
 To your north, a castle surrounded by snow tipped mountains looms on the horizon.
 Dunes of sand lie to your East.
 A chilly wind escapes the entrace to a cave to your South.</desc>
@@ -20,7 +20,7 @@ A chilly wind escapes the entrace to a cave to your South.</desc>
         <desc>
 The Castle is surrounded by a moat. The Drawbridge is stuck halfway up. A lever on your side of the Moat is missing a gear.
 A scraggly rockface that leads to an overlook looks easily climbable. 
-The path to the meadow sits behind you to the South" </desc>
+The path to the meadow sits behind you to the South.</desc>
         <items> </items>
         <exits>
                    N   E  S   W   U   D
@@ -51,7 +51,7 @@ You can climb Down back the way you came.</desc>
 A vast plain of rolling hills stopping only to meet the horizon lay infront of you. 
 Speckled cows are scattered about, munching on the waving tall grass that sways in the wind.
 There is a small cabin on one of the closer hills furthur to the West.
-The trail to the meadow winds into the forest to your East </desc>
+The trail to the meadow winds into the forest to your East. </desc>
         <items> </items>
         <exits>
                    N  E   S   W   U   D
@@ -62,7 +62,7 @@ The trail to the meadow winds into the forest to your East </desc>
     <room roomNum ="4" roomName="desert">
         <desc>
 An airid desert lies before you. you&quot;ll need a camel and water to cross it. 
-The meadow is to your West."</desc>
+The meadow is to your West. </desc>
         <items> </items>
         <exits>
                    N   E   S  W   U  D
@@ -73,9 +73,9 @@ The meadow is to your West."</desc>
 
     <room roomNum ="5" roomName="cave"> 
         <desc>
-"The cave is damp and dark. You can only go so far before you can&apos;t see.
+The cave is damp and dark. You can only go so far before you can&apos;t see.
 You&quot;ll need a torch to go furthur.
-The Meadow is to the North."</desc>
+The Meadow is to the North.</desc>
         <items> </items>
         <exits>
             <exit> 0, -1, -1, -1, -1, -1</exit>
