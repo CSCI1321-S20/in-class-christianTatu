@@ -3,7 +3,7 @@
         <desc>
 This is the starting meadow. Butterflys float about as golden rays of 
 sunshine cascade through the tree's leaves. You feel warm and sleepy.
-a path into the forest is to your west. A Wooden post at the entrance reads &quot;to the plains &quot;
+A path into the forest is to your west. A wooden post at the entrance reads &quot;to the plains &quot;
 To your north, a castle surrounded by snow tipped mountains looms on the horizon.
 Dunes of sand lie to your East.
 A chilly wind escapes the entrace to a cave to your South.</desc>
@@ -36,7 +36,7 @@ you can see the meadow to your south, and can see over the castle&apos;s rampart
 movement in the bailey aside from a stray cat that skimpers toward the barn.
 You can climb Down back the way you came.</desc>
         <items>
-        <item name="telescope">A telescope. It&apos;s eyepiece is cracked. It needs to be repaired. "</item>
+        <item name="telescope">A telescope. It&apos;s eyepiece is cracked. It needs to be repaired.</item>
         </items>
 
         <exits>

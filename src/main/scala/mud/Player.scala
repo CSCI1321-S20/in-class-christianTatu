@@ -67,10 +67,11 @@ class Player(val name: String, var loc: Room, var inv: List[Item]) {
   }
 
   def inventoryListing(): String = {
-    var genString = "." //Empty String genString
+    var genString = "."//Empty String genString
     for (i <- inv) { //in this for loop, I going through List of Item (using i)  and building the name and desc onto genString
-      genString = genString + i.name + " - " + i.desc
+      genString = genString +"\n"+ i.name + " - " + i.desc
     }
+
     if(inv.isEmpty) {
       genString = "Your Inventory is Empty"
     }
