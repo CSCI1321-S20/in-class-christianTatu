@@ -11,21 +11,7 @@ A chilly wind escapes the entrace to a cave to your South.</desc>
             <item name="sword">A Rotting Wooden sword, it&apos;s handle is well worn from years of novices practicing with it. It&apos;s blade is infested with moss</item>
         </items>
         <exits>   N  E  S  W   U   D
-            <exit>1, 4, 5, 3, -1, -1, </exit>
-        </exits>
-    </room>
-
-
-    </room roomNum="3" roomName="Plain">
-        <desc>
-A vast plain of rolling hills stopping only to meet the horizon lay infront of you. 
-Speckled cows are scattered about, munching on the waving tall grass that sways in the wind.
-There is a small cabin on one of the closer hills furthur to the West.
-The trail to the meadow winds into the forest to your East </desc>
-        <items> </items>
-        <exits>
-                   N   E   S   W   U   D
-            <exit>-1, 0, -1, -1, -1, -1,</exit>
+            <exit>1, 4, 5, 3, -1, -1</exit>
         </exits>
     </room>
 
@@ -38,10 +24,9 @@ The path to the meadow sits behind you to the South" </desc>
         <items> </items>
         <exits>
                    N   E  S   W   U   D
-            <exit>-1, -1, 0, -1,  2, -1,</exit>
+            <exit>-1, -1, 0, -1,  2, -1</exit>
         </exits>
     </room>
-
 
 
     <room roomNum ="2" roomName="Overlook"> 
@@ -51,16 +36,28 @@ you can see the meadow to your south, and can see over the castle&apos;s rampart
 movement in the bailey aside from a stray cat that skimpers toward the barn.
 You can climb Down back the way you came.</desc>
         <items>
-        <item itemName="telescope">A telescope. It&apos;s eyepiece is cracked. It needs to be repaired. "</item>
+        <item name="telescope">A telescope. It&apos;s eyepiece is cracked. It needs to be repaired. "</item>
         </items>
 
         <exits>
                    N   E   S   W   U   D
-            <exit>-1, -1, -1, -1, -1,  1, 
-        <exit dest="castle" dir="Down"></exit>
+            <exit>-1, -1, -1, -1, -1, 1</exit>
         </exits>
     </room>
 
+
+    <room roomNum="3" roomName="Plain">
+        <desc>
+A vast plain of rolling hills stopping only to meet the horizon lay infront of you. 
+Speckled cows are scattered about, munching on the waving tall grass that sways in the wind.
+There is a small cabin on one of the closer hills furthur to the West.
+The trail to the meadow winds into the forest to your East </desc>
+        <items> </items>
+        <exits>
+                   N  E   S   W   U   D
+            <exit>-1, 0, -1, -1, -1, -1</exit>
+        </exits>
+    </room>
 
     <room roomNum ="4" roomName="desert">
         <desc>
@@ -68,8 +65,8 @@ An airid desert lies before you. you&quot;ll need a camel and water to cross it.
 The meadow is to your West."</desc>
         <items> </items>
         <exits>
-                   N   E   S   W   U  D
-            <exit>-1, -1, -1, 0, -1, -1 </exit>
+                   N   E   S  W   U  D
+            <exit>-1, -1, -1, 0, -1, -1</exit>
         </exits>
     </room>
 
@@ -81,7 +78,7 @@ You&quot;ll need a torch to go furthur.
 The Meadow is to the North."</desc>
         <items> </items>
         <exits>
-            <exit> 0, -1, -1, -1, -1, -1, </exit>
+            <exit> 0, -1, -1, -1, -1, -1</exit>
         </exits>
     </room>
 
