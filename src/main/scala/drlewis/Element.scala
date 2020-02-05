@@ -1,5 +1,6 @@
-package drlewis
+ 
+package drlewio
 
 trait Element {
-    def cells: Seq[GridCell]
+  def cells: Seq[GridCell]
 }
