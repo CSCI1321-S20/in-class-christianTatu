@@ -69,34 +69,23 @@ int main(void) {
     for (int i = 0; i < num_bins; i++) {
         arr[i] = 0;
     }
+	    
+	srand(seed);
 
 	for( int i = 0; i < num_samples; i++) {
         int x = rand();
-        int ind= x / num_bins;
-        if(ind < 1* (RAND_MAX/6)){
-            arr[0] = arr[0] +1;
-        }        
-        if(ind < 2* (RAND_MAX/6)){
-            arr[1] = arr[1] +1;
-        }        
-        if(ind < 3* (RAND_MAX/6)){
-            arr[2] = arr[2] +1;
-        }
-        if(ind < 4* (RAND_MAX/6)){
-            arr[3] = arr[3] +1;
-        }
-        if(ind < 5* (RAND_MAX/6)){
-            arr[4] = arr[4] +1;
-        }
-        if(ind < 6* (RAND_MAX/6)){
-            arr[5] = arr[5] +1;
-        }        
+        int ind= (int) ((((double) num_bins) * x)/(RAND_MAX+1.0));
+        arr[ind] = arr[ind] +1;
     }
-
-    printf("counts using quotient method: ");
+	
+    printf("counts using quotient method: \n");
     for( int i = 0; i < num_bins; i++)  {
         printf("(%d) %d\n",i,arr[i]); 
+    
     }
 
-
+	/*
+	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa
+	This assignment was weird, I didn't relaly understand the problem until I went to ACM and the concept was explained to me.
+	The code itself wasn't too challenging, but I had several small errors that took a while to figure out */
 }
